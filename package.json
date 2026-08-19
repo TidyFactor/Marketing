@@ -1,0 +1,49 @@
+{
+  "name": "@alwkala/tidyfactor-marketing",
+  "version": "1.0.0",
+  "description": "TidyFactor Marketing \u2014 AI Direct-Response Marketing, Pillar-Cluster SEO & Multi-Channel Growth Engine",
+  "main": "SKILL.md",
+  "bin": {
+    "tidyfactor-marketing": "./bin/create-kit.js",
+    "add-skill": "./bin/add-skill.js",
+    "remove-skill": "./bin/remove-skill.js"
+  },
+  "scripts": {
+    "start": "node bin/create-kit.js",
+    "add-skill": "node bin/add-skill.js",
+    "remove-skill": "node bin/remove-skill.js",
+    "audit": "python ../../scratch/deep_audit_marketing_skill.py"
+  },
+  "keywords": [
+    "tidyfactor",
+    "marketing",
+    "growth",
+    "direct-response",
+    "copywriting",
+    "seo",
+    "b2b-marketing",
+    "linkedin",
+    "retention",
+    "loyalty",
+    "pricing",
+    "cro",
+    "meta-ads",
+    "google-ads"
+  ],
+  "author": "TidyFactor & Alwkala <hello@tidyfactor.com> (https://alwkala.com)",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TidyFactor/Marketing.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/TidyFactor/Marketing/issues"
+  },
+  "homepage": "https://tidyfactor.com"
+}

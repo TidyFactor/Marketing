@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "brand-core-v2",
+  "meta": {
+    "product": "TidyFactor Marketing Engine",
+    "tagline": "AI Direct Response & 360° Growth Marketing Engine",
+    "description": "A production-grade, AI-native marketing and growth engine following TidyFactor Skill architecture. Handles 7 pillars and 28 capabilities with zero fluff, data-backed metrics, quantitative benchmarks, and platform-native direct-response conversion frameworks.",
+    "version": "1.0.0",
+    "lastUpdated": "2026-08-18"
+  },
+
+  "identity": {
+    "logo": {
+      "full": "assets/logo.svg",
+      "fullDark": "assets/logo-dark.svg",
+      "mark": "assets/logo-mark.svg",
+      "favicon": "assets/favicon.svg",
+      "minClearSpace": "1x logo-mark height on all sides",
+      "minSizePx": 24
+    },
+    "socialPreview": {
+      "ogImage": "assets/og-default.png",
+      "ogDimensions": "1200x630"
+    }
+  },
+
+  "voice": {
+    "tone": "direct, evidence-first, quantitative, authentic, teacher-practitioner",
+    "vocabulary": {
+      "preferred": [
+        "direct response",
+        "conversion rate",
+        "margin protection",
+        "CAC payback",
+        "LTV:CAC",
+        "ROAS",
+        "anti-cliché",
+        "pillar-cluster",
+        "search intent",
+        "retention loop"
+      ],
+      "banned": [
+        "cutting-edge",
+        "seamless experience",
+        "innovative solutions",
+        "take your business to the next level",
+        "one-stop shop",
+        "نسعى دائماً لتقديم الأفضل",
+        "فريق من الخبراء",
+        "حلول متكاملة ومبتكرة"
+      ]
+    },
+    "principles": [
+      "Every sentence must carry a mechanism, a concrete number, or a verifiable proof point.",
+      "Never price cut without calculating unit gross margin impact.",
+      "Respect audience attention with high-signal, zero-throat-clearing direct copy."
+    ]
+  },
+
+  "pillars": {
+    "1_strategy": "Brand Voice, Positioning Statement, Competitive Differentiation, Phased Launch (T-30 to T+14)",
+    "2_content": "Pillar + Cluster SEO, Multi-Platform Posts, Publishing Grids, Newsletters",
+    "3_social": "LinkedIn B2B & Founder Personal Branding, Instagram/TikTok 0-3s Hooks, 0-1k Roadmap",
+    "4_email": "Lead Magnet Mechanics, 5-Email Welcome Flow, 3-Stage Cart Recovery, Win-Back Sequences",
+    "5_advertising": "3-Angle Ad Copy Matrices, 7-Dimension CRO Landing Page Wireframes, Meta & Google Ads",
+    "6_promotions": "72-Hour Flash Sales, Decoy Pricing Architecture, Viral Contests, Margin-Safe Coupons",
+    "7_growth": "2-Sided Viral Referral Loops, Influencer Vetting & Cold Outreach, Retention & Churn Diagnosis"
+  }
+}
