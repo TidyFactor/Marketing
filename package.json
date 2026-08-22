@@ -45,5 +45,21 @@
   "bugs": {
     "url": "https://github.com/TidyFactor/Marketing/issues"
   },
-  "homepage": "https://tidyfactor.com"
+  "homepage": "https://tidyfactor.com",
+  "files": [
+    "SKILL.md",
+    "references",
+    "bin",
+    "brand.json",
+    ".tidyfactor",
+    "AGENTS.md",
+    "SKILL-REGISTRY.md",
+    "VISION.md",
+    "README.md",
+    "README.ar.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    ".agents",
+    ".claude-skill"
+  ]
 }
