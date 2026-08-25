@@ -2,10 +2,10 @@
   "ecosystem": "tidyfactor",
   "track": "marketing",
   "name": "tidyfactor-marketing",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "npmPackage": "@alwkala/tidyfactor-marketing",
   "github": "https://github.com/TidyFactor/Marketing",
-  "skillFile": "../tidyfactor-marketing-v1.1.0.skill",
+  "skillFile": "../tidyfactor-marketing-v1.1.1.skill",
   "category": "marketing-engine",
   "type": "direct-response-growth",
   "outputs": [

@@ -5,6 +5,14 @@ All notable changes to the **[@alwkala/tidyfactor-marketing](https://www.npmjs.c
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.1] - 2026-08-25
+
+### Fixed
+- **Rule 9 Frontmatter Constraint Compliance**: Refactored `SKILL.md` frontmatter `description` down to 415 characters (well within Claude's 1024-character/byte upload ceiling) following the concise "what + when" pattern.
+- **Claude & IDE Autocomplete Compatibility**: Wrapped YAML description in valid double quotes with single-quoted triggers, preventing parse exceptions during skill upload on Claude Web / Anthropic platform and Antigravity IDE.
+
+---
+
 ## [1.1.0] - 2026-08-25
 
 ### Added
