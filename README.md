@@ -13,6 +13,12 @@
 
 [✨ Overview](#-overview--value-proposition) • [⚡ 7 Pillars & 28 Capabilities](#-7-marketing-pillars--28-capability-registry) • [🧠 CDL Engine](#-contextual-decision-layer-cdl) • [🛡️ 7-Axis Quality Gate](#-7-axis-pre-emit-quality-critique) • [🚀 Quick Start](#-quick-start--cli-wizard) • [📖 بالعربية](README.ar.md)
 
+<br/><br/>
+
+<p align="center">
+  <img src="assets/hero-banner.png" alt="TidyFactor Marketing Hero Banner" width="100%" />
+</p>
+
 </div>
 
 ---

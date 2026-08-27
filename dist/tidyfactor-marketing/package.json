@@ -53,6 +53,7 @@
     "references",
     "bin",
     "tools",
+    "assets",
     "brand.json",
     ".tidyfactor",
     "AGENTS.md",
