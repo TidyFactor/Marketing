@@ -22,8 +22,8 @@ This project exposes an Agentic Skill under `SKILL.md` (and `.claude-skill/SKILL
 
 ## 🛠️ CLI Execution Modes
 
-- **Interactive Setup Wizard** (`npx @alwkala/tidyfactor-marketing`): Launches interactive terminal setup prompting developers for project niche, primary channel focus, and target market (Global vs MENA).
-- **Skill Injection Mode** (`npx @alwkala/tidyfactor-marketing add-skill`): Injects `.agents/skills/tidyfactor-marketing/` directly into any target repository.
+- **Interactive Setup Wizard** (`npx @tidyfactor/cli-marketing`): Launches interactive terminal setup prompting developers for project niche, primary channel focus, and target market (Global vs MENA).
+- **Skill Injection Mode** (`npx @tidyfactor/cli-marketing add-skill`): Injects `.agents/skills/tidyfactor-marketing/` directly into any target repository.
 - **AI Agent Non-Interactive Mode**: Claude, Antigravity, Cursor, and Windsurf execute slash commands directly via `references/commands/<name>.md`.
 
 ---
