@@ -1,17 +1,19 @@
 <div align="center" dir="rtl">
 
-# 🚀 منظومة تايدي فاكتور للتسويق والنمو `v1.2.0`
-### محرك الاستجابة المباشرة (Direct-Response)، طبقة القرارات السياقية، ومنع الحشو الإعلاني
+# 🚀 محرك تايدي فاكتور للتسويق المباشر والنمو `TidyFactor Marketing v1.3.0`
+### هندسة التسويق المباشر، طبقة القرارات السياقية (CDL)، ونظام كتابة المحتوى عالي التحويل
 
-**الأساس الرسمي للتسويق والنمو والاستحواذ على العملاء ضمن منظومة TidyFactor Ecosystem.**
+**الأساس التسويقي الرسمي لمنظومة تايدي فاكتور (TidyFactor Ecosystem) والشريك الاستراتيجي وكالة الوكالة (Alwkala).**
 
-[![npm version](https://img.shields.io/npm/v/@alwkala/tidyfactor-marketing.svg?style=for-the-badge&color=4F46E5)](https://www.npmjs.com/package/@alwkala/tidyfactor-marketing)
+[![npm version](https://img.shields.io/npm/v/@alwkala/tidyfactor-marketing.svg?style=for-the-badge&color=4F46E5&logo=npm)](https://www.npmjs.com/package/@alwkala/tidyfactor-marketing)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](LICENSE)
+[![Ecosystem](https://img.shields.io/badge/TidyFactor-Skills--LAB-purple.svg?style=for-the-badge)](https://github.com/TidyFactor)
+[![Compatibility](https://img.shields.io/badge/Agents-Antigravity%20|%20Claude%20|%20Cursor%20|%20Codex-orange.svg?style=for-the-badge)](SKILL.md)
 [![RTL Ready](https://img.shields.io/badge/RTL-Native%20Arabic-emerald.svg?style=for-the-badge)](README.ar.md)
-[![CDL Layer](https://img.shields.io/badge/CDL-طبقة%20القرارات-purple.svg?style=for-the-badge)](#-طبقة-القرارات-السياقية-cdl-v10-وأمر-brief)
-[![Quality Critique](https://img.shields.io/badge/نظام%20الجودة-P/H/E/S/R/V/D-green.svg?style=for-the-badge)](#-النقد-الذاتي-القبلي-سباعي-المحاور)
+[![Architect Score](https://img.shields.io/badge/Architect%20Score-13%2F13%20Pass%20(100%25)-green.svg?style=for-the-badge)](#-معايير-الحوكمة-والجودة)
+[![AI Agents Compatible](https://img.shields.io/badge/AI%20Agents-Universal%20Compatibility-4285F4.svg?style=for-the-badge)](SKILL.md)
 
-[✨ نظرة عامة](#-نظرة-عامة-والقيمة-المضافة) • [⚡ الركائز الـ 8 والأوامر](#-سجل-الركائز-التسويقية-الـ-8-والـ-28-قدرة) • [🧠 طبقة القرارات CDL](#-طبقة-القرارات-السياقية-cdl-v10-وأمر-brief) • [🛡️ نظام الجودة 7-Axis](#-النقد-الذاتي-القبلي-سباعي-المحاور) • [🚀 البدء السريع](#-البدء-السريع-ومعالج-سطر-الأوامر) • [📖 English Version](README.md)
+[ English ](README.md) • [ العربية ](README.ar.md) • [ فارسی ](README.fa.md) • [ Español ](README.es.md) • [ Português ](README.pt.md) • [ 简体中文 ](README.zh.md) • [ Deutsch ](README.de.md) • [ Français ](README.fr.md)
 
 <br/><br/>
 

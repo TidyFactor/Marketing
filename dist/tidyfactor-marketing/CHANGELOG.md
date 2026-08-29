@@ -2,6 +2,14 @@
 
 All notable changes to the **[@alwkala/tidyfactor-marketing](https://www.npmjs.com/package/@alwkala/tidyfactor-marketing)** package will be documented in this file.
 
+## [1.3.0] - 2026-08-29
+
+### Added - Arabic Direct-Response & MENA Intelligence Engine
+- **Arabic Direct-Response Engineering (`memory/arabic-writing.md`)**: Linguistic frameworks, active voice rules, Idafa constructs, and dialectical tone calibration for Egypt, Gulf/Saudi Arabia, Libya, and Pan-Arab markets without mechanical translation artifacts.
+- **MENA Trust & Platform Calibration (`memory/platform-specs.md`)**: Integrated per-country platform prioritization (Meta, Snapchat, TikTok, X, Instagram, WhatsApp) and local payment conversion gateways (InstaPay, Fawry, Mada, Tabby, Tamara, KNET, CliQ).
+- **Anti-Slop Arabic Cliché Banishment**: Replaced empty promotional phrases with falsifiable, quantified outcomes and testable hooks.
+- **7-Badge Standard Ecosystem Suite (`style=for-the-badge`)**: Upgraded documentation headers to unified 7-badge matrix with Skills-LAB and universal AI Agent compatibility.
+
 ## [1.2.0] - 2026-08-29
 
 ### Added - Global Multi-Tier & Multi-Language Documentation Architecture

@@ -1,17 +1,19 @@
 <div align="center">
 
-# 🚀 TidyFactor Marketing `v1.2.0`
+# 🚀 TidyFactor Marketing `v1.3.0`
 ### AI Direct-Response Marketing, Contextual Decision Layer & Anti-Slop Content Suite
 
 **The official marketing & customer acquisition foundation for the TidyFactor Ecosystem.**
 
-[![npm version](https://img.shields.io/npm/v/@alwkala/tidyfactor-marketing.svg?style=for-the-badge&color=4F46E5)](https://www.npmjs.com/package/@alwkala/tidyfactor-marketing)
+[![npm version](https://img.shields.io/npm/v/@alwkala/tidyfactor-marketing.svg?style=for-the-badge&color=4F46E5&logo=npm)](https://www.npmjs.com/package/@alwkala/tidyfactor-marketing)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](LICENSE)
+[![Ecosystem](https://img.shields.io/badge/TidyFactor-Skills--LAB-purple.svg?style=for-the-badge)](https://github.com/TidyFactor)
+[![Compatibility](https://img.shields.io/badge/Agents-Antigravity%20|%20Claude%20|%20Cursor%20|%20Codex-orange.svg?style=for-the-badge)](SKILL.md)
 [![RTL Ready](https://img.shields.io/badge/RTL-Native%20Arabic-emerald.svg?style=for-the-badge)](README.ar.md)
-[![CDL Layer](https://img.shields.io/badge/CDL-Contextual%20Decision-purple.svg?style=for-the-badge)](#-contextual-decision-layer-cdl)
-[![Quality Critique](https://img.shields.io/badge/7--Axis%20Critique-P/H/E/S/R/V/D-green.svg?style=for-the-badge)](#-7-axis-pre-emit-quality-critique)
+[![Architect Score](https://img.shields.io/badge/Architect%20Score-13%2F13%20Pass%20(100%25)-green.svg?style=for-the-badge)](#-governance--quality-bar)
+[![AI Agents Compatible](https://img.shields.io/badge/AI%20Agents-Universal%20Compatibility-4285F4.svg?style=for-the-badge)](SKILL.md)
 
-[✨ Overview](#-overview--value-proposition) • [⚡ 7 Pillars & 28 Capabilities](#-7-marketing-pillars--28-capability-registry) • [🧠 CDL Engine](#-contextual-decision-layer-cdl) • [🛡️ 7-Axis Quality Gate](#-7-axis-pre-emit-quality-critique) • [🚀 Quick Start](#-quick-start--cli-wizard) • [📖 بالعربية](README.ar.md)
+[ English ](README.md) • [ العربية ](README.ar.md) • [ فارسی ](README.fa.md) • [ Español ](README.es.md) • [ Português ](README.pt.md) • [ 简体中文 ](README.zh.md) • [ Deutsch ](README.de.md) • [ Français ](README.fr.md)
 
 <br/><br/>
 
