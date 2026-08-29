@@ -2,6 +2,14 @@
 
 All notable changes to the **[@alwkala/tidyfactor-marketing](https://www.npmjs.com/package/@alwkala/tidyfactor-marketing)** package will be documented in this file.
 
+## [1.2.0] - 2026-08-29
+
+### Added - Global Multi-Tier & Multi-Language Documentation Architecture
+- **Rule 13 Implementation**: Two-tier documentation separation between Canonical Technical Documentation (`README.md` SSOT) and First-Class Market Localizations.
+- **Universal Multi-Language Switcher**: Standardized 8-language switcher navigation bar across all documentation files (`EN`, `AR`, `FA`, `ES`, `PT`, `ZH`, `DE`, `FR`).
+- **First-Class Localized Developer Adoption Guides**: `README.es.md`, `README.pt.md`, `README.fa.md`, `README.zh.md`, `README.de.md`, `README.fr.md`.
+- **Automated Validation & Packaging**: Updated `tools/build-skill.js` and `tools/validate_skill.py`.
+
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 

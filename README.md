@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 TidyFactor Marketing `v1.1.1`
+# 🚀 TidyFactor Marketing `v1.2.0`
 ### AI Direct-Response Marketing, Contextual Decision Layer & Anti-Slop Content Suite
 
 **The official marketing & customer acquisition foundation for the TidyFactor Ecosystem.**
@@ -48,7 +48,7 @@ tidyfactor-marketing/
 ├── SKILL.md                           ← Master Command Dispatcher (28 Capabilities)
 ├── SKILL-REGISTRY.md                  ← Unified naming, CLI commands, and metadata
 ├── VISION.md                          ← Track summary aligned with TidyFactor Vision
-├── CHANGELOG.md                       ← Semantic release notes (v1.0.0)
+├── CHANGELOG.md                       ← Semantic release notes (v1.2.0)
 ├── requirements.txt                   ← Python conversion & data analytics tooling
 ├── package.json                       ← NPM package config (@alwkala/tidyfactor-marketing)
 ├── README.md & README.ar.md           ← Bilingual documentation

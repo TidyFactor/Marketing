@@ -1,6 +1,6 @@
 {
   "name": "@alwkala/tidyfactor-marketing",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "TidyFactor Marketing — AI Direct-Response Marketing, Pillar-Cluster SEO & Multi-Channel Growth Engine with Contextual Decision Layer (CDL)",
   "main": "SKILL.md",
   "bin": {
@@ -49,19 +49,25 @@
   },
   "homepage": "https://tidyfactor.com",
   "files": [
-    "SKILL.md",
-    "references",
-    "bin",
-    "tools",
-    "assets",
-    "brand.json",
     ".tidyfactor",
     "AGENTS.md",
-    "SKILL-REGISTRY.md",
-    "VISION.md",
-    "README.md",
-    "README.ar.md",
+    "CHANGELOG.md",
     "LICENSE",
-    "CHANGELOG.md"
+    "README.ar.md",
+    "README.de.md",
+    "README.es.md",
+    "README.fa.md",
+    "README.fr.md",
+    "README.md",
+    "README.pt.md",
+    "README.zh.md",
+    "SKILL-REGISTRY.md",
+    "SKILL.md",
+    "VISION.md",
+    "assets",
+    "bin",
+    "brand.json",
+    "references",
+    "tools"
   ]
 }
