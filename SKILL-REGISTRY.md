@@ -10,9 +10,9 @@
 | Field | Value |
 |---|---|
 | **Unified Tool Name** | `tidyfactor-marketing` |
-| **NPM Package** | [`@alwkala/tidyfactor-marketing`](https://www.npmjs.com/package/@alwkala/tidyfactor-marketing) |
-| **CLI Execution Command** | `npx @alwkala/tidyfactor-marketing` or `npx tidyfactor-marketing` |
-| **Skill Injection Command** | `npx @alwkala/tidyfactor-marketing add-skill` or `npx tidyfactor-marketing add-skill` |
+| **NPM Package** | [`@tidyfactor/marketing`](https://www.npmjs.com/package/@tidyfactor/marketing) |
+| **CLI Execution Command** | `npx @tidyfactor/cli-marketing` or `npx tidyfactor-marketing` |
+| **Skill Injection Command** | `npx @tidyfactor/cli-marketing add-skill` or `npx tidyfactor-marketing add-skill` |
 | **GitHub Repository** | [alwkala/tidyfactor-marketing](https://github.com/alwkala/tidyfactor-marketing) |
 | **Version** | `1.0.0` |
 | **Category** | AI Direct Response Marketing & 360° Growth Engine |

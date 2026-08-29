@@ -5,7 +5,7 @@
 
 **الأساس الرسمي للتسويق والنمو والاستحواذ على العملاء ضمن منظومة TidyFactor Ecosystem.**
 
-[![npm version](https://img.shields.io/npm/v/@alwkala/tidyfactor-marketing.svg?style=for-the-badge&color=4F46E5)](https://www.npmjs.com/package/@alwkala/tidyfactor-marketing)
+[![npm version](https://img.shields.io/npm/v/@tidyfactor/marketing.svg?style=for-the-badge&color=4F46E5)](https://www.npmjs.com/package/@tidyfactor/marketing)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 [![RTL Ready](https://img.shields.io/badge/RTL-Native%20Arabic-emerald.svg?style=for-the-badge)](README.ar.md)
 [![Direct Response](https://img.shields.io/badge/Direct%20Response-Anti--Fluff-amber.svg?style=for-the-badge)](#-ميثاق-منع-الكليشيهات-وضبط-الجودة)
@@ -46,7 +46,7 @@ tidyfactor-marketing/
 ├── VISION.md                          ← الرؤية العامة المرتبطة بـ TidyFactor
 ├── CHANGELOG.md                       ← سجل التحديثات والإصدارات الدلالي (v1.0.0)
 ├── requirements.txt                   ← مكتبات بايثون لتحليل الكلمات والبيانات
-├── package.json                       ← إعدادات حزمة NPM (@alwkala/tidyfactor-marketing)
+├── package.json                       ← إعدادات حزمة NPM (@tidyfactor/marketing)
 ├── README.md & README.ar.md           ← التوثيق المزدوج (عربي وإنجليزي)
 ├── bin/                               ← أدوات سطر الأوامر (create-kit.js, add-skill.js)
 ├── references/
@@ -166,14 +166,14 @@ tidyfactor-marketing/
 ### الخيار 1: المعالج التفاعلي عبر سطر الأوامر
 شغّل المعالج التفاعلي خطوة بخطوة في الطرفية (Terminal):
 ```bash
-npx @alwkala/tidyfactor-marketing
+npx @tidyfactor/cli-marketing
 ```
 *يطلب منك تحديد مجال المشروع، والسوق المستهدف (عالمي أو عربي)، والتركيز الأساسي (B2B أو متاجر إلكترونية أو المنظومة الشاملة).*
 
 ### الخيار 2: الحقن المباشر في أي مشروع
 احقن كامل ملفات المهارة في مسار `.agents/skills/tidyfactor-marketing/` بنقرة واحدة:
 ```bash
-npx @alwkala/tidyfactor-marketing add-skill
+npx @tidyfactor/cli-marketing add-skill
 ```
 
 ### الخيار 3: أوامر Slash للوكلاء الأذكياء (Claude, Antigravity, Cursor)

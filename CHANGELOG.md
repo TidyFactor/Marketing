@@ -1,6 +1,6 @@
 # Changelog - TidyFactor Marketing
 
-All notable changes to the **[@alwkala/tidyfactor-marketing](https://www.npmjs.com/package/@alwkala/tidyfactor-marketing)** package will be documented in this file.
+All notable changes to the **[@tidyfactor/marketing](https://www.npmjs.com/package/@tidyfactor/marketing)** package will be documented in this file.
 
 ## [1.3.0] - 2026-08-29
 
