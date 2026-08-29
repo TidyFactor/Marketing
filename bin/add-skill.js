@@ -1,50 +1,65 @@
 #!/usr/bin/env node
+/**
+ * bin/add-skill.js — Multi-Agent Skill Installer Wrapper for tidyfactor-marketing
+ * Supports Trae, Cursor, Windsurf, Antigravity, GitHub Copilot, RooCode, OpenCode, KiloCode, Warp, and Universal.
+ *
+ * @license Apache-2.0
+ */
 
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 
-/* Lightweight Zero-Dependency ANSI formatting */
-const chalk = {
-  cyan: (str) => `\x1b[36m${str}\x1b[0m`,
-  green: (str) => `\x1b[32m${str}\x1b[0m`,
-  yellow: (str) => `\x1b[33m${str}\x1b[0m`,
-  red: (str) => `\x1b[31m${str}\x1b[0m`,
-  bold: (str) => `\x1b[1m${str}\x1b[0m`,
-  dim: (str) => `\x1b[2m${str}\x1b[0m`,
-};
-
-const PACKAGE_ROOT = path.resolve(__dirname, '..');
 const targetDir = process.cwd();
-const skillDestDir = path.join(targetDir, '.agents', 'skills', 'tidyfactor-marketing');
+const skillSource = path.resolve(__dirname, '..');
+const skillName = 'tidyfactor-marketing';
 
-console.log(chalk.cyan(`\nInjecting TidyFactor Marketing Skill into: ${targetDir}...`));
+const AGENT_MAP = [
+  { name: 'Trae AI IDE',               dir: path.join(targetDir, '.trae', 'skills', skillName),        test: path.join(targetDir, '.trae') },
+  { name: 'Cursor IDE',                dir: path.join(targetDir, '.cursor', 'skills', skillName),      test: path.join(targetDir, '.cursor') },
+  { name: 'Windsurf Cascade',          dir: path.join(targetDir, '.windsurf', 'skills', skillName),    test: path.join(targetDir, '.windsurf') },
+  { name: 'GitHub Copilot',            dir: path.join(targetDir, '.github', 'prompts', skillName),     test: path.join(targetDir, '.github') },
+  { name: 'RooCode',                   dir: path.join(targetDir, '.roo', 'skills', skillName),         test: path.join(targetDir, '.roo') },
+  { name: 'OpenCode / Zen',            dir: path.join(targetDir, '.opencode', 'skills', skillName),    test: path.join(targetDir, '.opencode') },
+  { name: 'KiloCode',                  dir: path.join(targetDir, '.kilocode', 'skills', skillName),    test: path.join(targetDir, '.kilocode') },
+  { name: 'Warp Terminal',             dir: path.join(targetDir, '.warp', 'skills', skillName),        test: path.join(targetDir, '.warp') },
+  { name: 'Kiro Spec IDE',             dir: path.join(targetDir, '.kiro', 'skills', skillName),        test: path.join(targetDir, '.kiro') },
+  { name: 'Claude Code',               dir: path.join(targetDir, '.claude', 'skills', skillName),      test: path.join(targetDir, '.claude') },
+  { name: 'Zed AI Agent',              dir: path.join(targetDir, '.zed', 'skills', skillName),         test: path.join(targetDir, '.zed') },
+  { name: 'Google Antigravity/Gemini', dir: path.join(targetDir, '.agents', 'skills', skillName),      test: path.join(targetDir, '.agents') },
+];
 
-fs.mkdirSync(skillDestDir, { recursive: true });
-
-const copyDir = (src, dest) => {
+function copyRecursive(src, dest) {
   fs.mkdirSync(dest, { recursive: true });
-  for (const item of fs.readdirSync(src)) {
-    const srcItem = path.join(src, item);
-    const destItem = path.join(dest, item);
-    if (fs.statSync(srcItem).isDirectory()) {
-      copyDir(srcItem, destItem);
+  const entries = fs.readdirSync(src, { withFileTypes: true });
+  for (const entry of entries) {
+    const srcPath = path.join(src, entry.name);
+    const destPath = path.join(dest, entry.name);
+    if (['.git', 'node_modules', 'dist'].includes(entry.name)) continue;
+    if (entry.isDirectory()) {
+      copyRecursive(srcPath, destPath);
     } else {
-      fs.copyFileSync(srcItem, destItem);
+      fs.copyFileSync(srcPath, destPath);
     }
   }
-};
+}
 
-// Copy references and root files
-const filesToCopy = ['SKILL.md', 'package.json', 'README.md', 'README.ar.md', 'LICENSE', 'brand.json', '.tidyfactor'];
-for (const f of filesToCopy) {
-  const srcFile = path.join(PACKAGE_ROOT, f);
-  if (fs.existsSync(srcFile)) {
-    fs.copyFileSync(srcFile, path.join(skillDestDir, f));
+// Determine installation targets
+let mountedTargets = [];
+
+for (const agent of AGENT_MAP) {
+  if (fs.existsSync(agent.test)) {
+    copyRecursive(skillSource, agent.dir);
+    mountedTargets.push(agent.name + ' (' + path.relative(targetDir, agent.dir) + ')');
   }
 }
 
-if (fs.existsSync(path.join(PACKAGE_ROOT, 'references'))) {
-  copyDir(path.join(PACKAGE_ROOT, 'references'), path.join(skillDestDir, 'references'));
+// Always ensure universal fallback in .agents/skills/
+const defaultDir = path.join(targetDir, '.agents', 'skills', skillName);
+copyRecursive(skillSource, defaultDir);
+if (!mountedTargets.some(t => t.includes('.agents'))) {
+  mountedTargets.push('Universal Default (.agents/skills/' + skillName + ')');
 }
 
-console.log(chalk.bold(chalk.green(`✅ TidyFactor Marketing Skill injected successfully into .agents/skills/tidyfactor-marketing!\n`)));
+console.log('✨ Successfully injected ' + skillName + ' into:');
+mountedTargets.forEach(t => console.log('  • ' + t));
