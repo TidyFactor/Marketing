@@ -1,3 +1,4 @@
+<!-- last-verified: 2026-09-02 -->
 # Marketing Contextual Decision Layer (CDL) — Thin Arbitration Protocol
 
 > **Purpose**: Governs pre-generation marketing elicitation. Resolves strategic, market, and copy ambiguities before campaign or copy emission without generating duplicate memory catalogs or conversational slop.

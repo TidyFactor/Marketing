@@ -1,6 +1,6 @@
 # Arabic Direct-Response & Copywriting Engineering
 
-<!-- last-verified: 2026-08-29 -->
+<!-- last-verified: 2026-09-02 -->
 
 Deterministic rules and linguistic frameworks for composing Arabic marketing, growth, and conversion copy natively without translation artifacts.
 

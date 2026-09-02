@@ -1,3 +1,4 @@
+<!-- last-verified: 2026-09-02 -->
 # Marketing Memory: Copywriting, Psychological Models & Positioning
 
 Operational direct-response frameworks, 12 psychological mental models, B2B ICP definitions, anti-cliché replacement rules, and SaaS pricing architectures.

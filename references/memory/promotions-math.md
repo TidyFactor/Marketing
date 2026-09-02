@@ -1,3 +1,4 @@
+<!-- last-verified: 2026-09-02 -->
 # Marketing Memory: Promotions Math, Discounts & Margin Safeguards
 
 Operational financial models to engineer high-converting promotions, sales, and contests without destroying profit margins.

@@ -1,3 +1,4 @@
+<!-- last-verified: 2026-09-02 -->
 # Marketing Memory: Platform Specs, MENA Regional Intelligence & CRO
 
 Operational parameters for Global Social Platforms, Country-by-Country MENA Market Intelligence, Regional Payment Infrastructure, and 7-Dimension CRO Audits.

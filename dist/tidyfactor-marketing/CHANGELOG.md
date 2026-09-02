@@ -2,6 +2,18 @@
 
 All notable changes to the **[@tidyfactor/marketing](https://www.npmjs.com/package/@tidyfactor/marketing)** package will be documented in this file.
 
+## [1.4.0] - 2026-09-02
+
+### 🧠 Added — Sovereign Brain MCP Integration, Copy Auditor & Fail-Open Protocol
+- **Brain Integration Contract (`references/memory/20-brain-baas-integration.md`)**: Operational specification defining sovereign self-hosted architecture, isolated client SQLite database scoping, and Marketing Strategy Knowledge Item (KI) payload schemas.
+- **Fail-Open Resolution Protocol (`references/workflows/brief.md`)**: Embedded deterministic context discovery: (1) Local workspace auto-sensing first, (2) Optional Brain MCP context acceleration (`search_knowledge_base`) when active, (3) Instant 0ms silent fallback to 3-question structured interview with zero robotic preamble.
+- **Runtime Tooling Manifest & Quality Engine (`manifest.json`)**: Declared portable `audit_copy` and `calc_promo_math` tools with schema validation for direct CLI and MCP `run_skill_tool` execution.
+- **Automated Copy Quality Auditor (`scripts/audit_copy.py`)**: Standalone and MCP-compatible CLI engine scanning copy for AI cliches, banned fluff, and 7-axis pre-emit critique stamps.
+- **Unit Economics & Margin Calculator (`scripts/calc_promo_math.py`)**: Deterministic calculations for gross margin safety, break-even ROAS targets, and discount compression.
+- **Anti-Triggers & Tooling Scope**: Enriched `SKILL.md` with explicit Rule 10 Tooling Scope and anti-triggers.
+
+---
+
 ## [1.3.0] - 2026-08-29
 
 ### Added - Arabic Direct-Response & MENA Intelligence Engine
