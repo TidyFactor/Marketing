@@ -2,6 +2,17 @@
 
 All notable changes to the **[@tidyfactor/marketing](https://www.npmjs.com/package/@tidyfactor/marketing)** package will be documented in this file.
 
+## [1.5.0] - 2026-09-02
+
+### 🧠 Added — Contextual Decision Layer (CDL v1.1.0) & Declarative Decision Gates
+- **Declarative Decision Gates (`manifest.json`)**: Added formal `decision_gates[]` declaration for the `brief` command conforming to manifest schema v1.1.0, defining `target_market`, `brand_voice`, `funnel_stage`, and `core_offer` with `track_staleness: true`.
+- **Context Delta Resolution Engine (`references/workflows/brief.md`)**: Upgraded brief workflow to evaluate the mechanical Delta formula:
+  $$\text{Unknowns} = \text{Required Decisions} - (\text{Discovered Facts} \cup \text{Brain KIs})$$
+- **Interactive Disclosure & User Agency First**: Surfacing all genuine Unknowns interactively with structured A/B/C/D choices and recommended defaults, prioritizing rich user engagement.
+- **Anti-Dual-Write Architecture**: Enforcing local `.tidyfactor/marketing-brief.md` as sole SSOT, with one-way outbound cloud sync via `--sync-brain`.
+
+---
+
 ## [1.4.0] - 2026-09-02
 
 ### 🧠 Added — Sovereign Brain MCP Integration, Copy Auditor & Fail-Open Protocol
