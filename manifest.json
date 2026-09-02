@@ -1,0 +1,67 @@
+{
+  "$schema": "https://tidyfactor.com/schemas/skill-manifest.tools.schema.json",
+  "skill_id": "tidyfactor-marketing",
+  "version": "1.4.0",
+  "skill_root_anchor": "self",
+  "tools": [
+    {
+      "name": "audit_copy",
+      "description": "Audits direct-response marketing copy against AI anti-patterns, banned cliches, tone rules, and 7-axis critique stamps.",
+      "runtime": "python",
+      "entrypoint": "scripts/audit_copy.py",
+      "args_schema": {
+        "type": "object",
+        "properties": {
+          "target": {
+            "type": "string",
+            "description": "Path to marketing copy file or markdown file to audit"
+          },
+          "text": {
+            "type": "string",
+            "description": "Direct string content of marketing copy to audit"
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Output structured JSON report"
+          }
+        }
+      },
+      "cli_pattern": "python {entrypoint} {target} --json",
+      "isolation_recommended": false
+    },
+    {
+      "name": "calc_promo_math",
+      "description": "Calculates unit economics, gross margins, break-even ROAS targets, and discount safety thresholds.",
+      "runtime": "python",
+      "entrypoint": "scripts/calc_promo_math.py",
+      "args_schema": {
+        "type": "object",
+        "properties": {
+          "price": {
+            "type": "number",
+            "description": "Original retail product price"
+          },
+          "cogs": {
+            "type": "number",
+            "description": "Cost of Goods Sold (COGS)"
+          },
+          "discount": {
+            "type": "number",
+            "description": "Discount percentage (e.g. 20 for 20%)"
+          },
+          "cac": {
+            "type": "number",
+            "description": "Estimated Customer Acquisition Cost (CAC) per order"
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Output structured JSON metrics"
+          }
+        },
+        "required": ["price", "cogs"]
+      },
+      "cli_pattern": "python {entrypoint} --price {price} --cogs {cogs} --discount {discount} --cac {cac} --json",
+      "isolation_recommended": false
+    }
+  ]
+}

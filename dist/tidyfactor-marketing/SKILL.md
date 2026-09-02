@@ -21,10 +21,29 @@ A command dispatcher. This file routes marketing and growth intents to the corre
 
 ## Non-Negotiable Quality Constraints
 
-1. **Contextual Decision Layer (CDL)**: Resolve regional, voice, and offer baseline via `.tidyfactor/marketing-brief.md` or thin protocol in `references/memory/decision-points.md` before generating campaigns.
-2. **7-Axis Pre-Emit Self-Critique (`P/H/E/S/R/V/D`)**: All output must self-audit against Pain Specificity, Hook Power, Execution, Stage Fit, Restraint, Voice, and Decision Alignment (`quality-bar.md`).
-3. **Multi-Angle Requirement**: All ad copy generation must produce at least 3 distinct psychological angles (Pain/Loss Aversion, Logic/ROI/Efficiency, and Aspiration/Social Proof).
-4. **Margin Protection Rule**: Any discounting or promotional strategy must verify unit gross margins and prioritize threshold-based AOV expansion over arbitrary price slashing.
-5. **Bilingual Direct Response & Native Arabic**: Compose Arabic copy natively per `arabic-writing.md` using Modern Standard Arabic (فصحى معاصرة رنانة) or calibrated regional dialects without mechanical translation artifacts.
-6. **MENA Platform & Trust Calibration**: Adhere to country-specific platform rankings, trust signals, and payment methods (`platform-specs.md`).
+1. **Contextual Decision Layer (CDL)**: Auto-sense regional, voice, and offer baselines from disk or Brain MCP before prompting the user (`references/memory/20-brain-baas-integration.md`).
+2. **Zero Robotic Preamble**: Never output conversational monologue dumps, textbook essays, or persona greetings.
+3. **7-Axis Pre-Emit Self-Critique (`P/H/E/S/R/V/D`)**: All output must self-audit against Pain Specificity, Hook Power, Execution, Stage Fit, Restraint, Voice, and Decision Alignment (`quality-bar.md`).
+4. **Multi-Angle Requirement**: All ad copy generation must produce at least 3 distinct psychological angles (Pain/Loss Aversion, Logic/ROI/Efficiency, and Aspiration/Social Proof).
+5. **Margin Protection Rule**: Any discounting or promotional strategy must verify unit gross margins and prioritize threshold-based AOV expansion over arbitrary price slashing.
+6. **Bilingual Direct Response & Native Arabic**: Compose Arabic copy natively per `arabic-writing.md` using Modern Standard Arabic (فصحى معاصرة رنانة) or calibrated regional dialects without mechanical translation artifacts.
+7. **MENA Platform & Trust Calibration**: Adhere to country-specific platform rankings, trust signals, and payment methods (`platform-specs.md`).
+
+## Anti-Triggers
+
+- Do NOT use for generic text formatting or non-commercial writing tasks.
+- Do NOT use for backend database operations or platform infrastructure.
+
+## Tooling Scope (Rule 10)
+
+- **Execution Tools**:
+  - `audit_copy` (`scripts/audit_copy.py`): Sub-second AST & cliché linter.
+  - `calc_promo_math` (`scripts/calc_promo_math.py`): Break-even ROAS & margin protection math.
+- **Contract & Schema**: Portably declared in `manifest.json` with `"skill_root_anchor": "self"`.
+- **Invocability**: Executable via direct CLI or through `tidyfactor-brain` MCP `run_skill_tool`.
+
+## Skill vs MCP Boundary (Rule 12)
+
+- **Inside Skill**: Static marketing frameworks, copy matrices, Arabic tone rubrics, and local auditing tools.
+- **MCP Layer**: Sovereign Brain persistence (`search_knowledge_base`, `extract_knowledge_item`) operating under the strict Fail-Open protocol.
 

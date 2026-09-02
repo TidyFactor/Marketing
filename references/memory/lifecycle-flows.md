@@ -1,3 +1,4 @@
+<!-- last-verified: 2026-09-02 -->
 # Marketing Memory: Email Lifecycle Flows & Retention Architectures
 
 Operational automation architectures, trigger delays, subject line formulas, churn prevention, win-back flows, and B2B outreach.

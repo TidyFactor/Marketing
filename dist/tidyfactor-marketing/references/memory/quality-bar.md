@@ -1,3 +1,4 @@
+<!-- last-verified: 2026-09-02 -->
 # Marketing Quality Bar & 7-Axis Pre-Emit Self-Critique
 
 > **Purpose**: Enforces strict anti-slop marketing standards, conversion mechanics, and regional calibration across all copywriting, ads, emails, and campaign strategies.

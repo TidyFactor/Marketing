@@ -1,3 +1,4 @@
+<!-- last-verified: 2026-09-02 -->
 # Marketing Memory: Industry Benchmarks, ICE Scoring & Funnel Formulas
 
 Operational quantitative anchors for marketing audits, paid ad budgets, B2B pipeline, retention health, growth experiments, and regional conversion benchmarks.

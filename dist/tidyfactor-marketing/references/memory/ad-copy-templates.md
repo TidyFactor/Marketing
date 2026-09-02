@@ -1,3 +1,4 @@
+<!-- last-verified: 2026-09-02 -->
 # Marketing Memory: Ad Copy Templates & Platform Matrices
 
 Operational plug-and-play ad copy architectures for Meta, Google Search, TikTok, and LinkedIn.
