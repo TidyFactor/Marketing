@@ -1,67 +1,208 @@
 {
-  "$schema": "https://tidyfactor.com/schemas/skill-manifest.tools.schema.json",
+  "manifest_schema_version": "1.1.0",
   "skill_id": "tidyfactor-marketing",
-  "version": "1.4.0",
   "skill_root_anchor": "self",
   "tools": [
     {
       "name": "audit_copy",
       "description": "Audits direct-response marketing copy against AI anti-patterns, banned cliches, tone rules, and 7-axis critique stamps.",
-      "runtime": "python",
-      "entrypoint": "scripts/audit_copy.py",
-      "args_schema": {
-        "type": "object",
-        "properties": {
-          "target": {
-            "type": "string",
+      "entrypoint": {
+        "runtime": "python3",
+        "script": "scripts/audit_copy.py"
+      },
+      "invocation": {
+        "cli_pattern": "{runtime} {skill_root}/{script} {target_path} {flags}",
+        "args": [
+          {
+            "name": "target",
+            "type": "path",
+            "required": true,
             "description": "Path to marketing copy file or markdown file to audit"
           },
-          "text": {
-            "type": "string",
-            "description": "Direct string content of marketing copy to audit"
-          },
-          "json": {
+          {
+            "name": "json",
             "type": "boolean",
+            "required": false,
+            "default": false,
+            "flag": "--json",
             "description": "Output structured JSON report"
           }
-        }
+        ]
       },
-      "cli_pattern": "python {entrypoint} {target} --json",
-      "isolation_recommended": false
+      "output": {
+        "format": "json",
+        "channel": "stdout"
+      },
+      "runtime_requirements": {
+        "isolation_recommended": false,
+        "dependencies": []
+      },
+      "invoked_by_commands": ["content", "advertising", "email", "audit"]
     },
     {
       "name": "calc_promo_math",
       "description": "Calculates unit economics, gross margins, break-even ROAS targets, and discount safety thresholds.",
-      "runtime": "python",
-      "entrypoint": "scripts/calc_promo_math.py",
-      "args_schema": {
-        "type": "object",
-        "properties": {
-          "price": {
+      "entrypoint": {
+        "runtime": "python3",
+        "script": "scripts/calc_promo_math.py"
+      },
+      "invocation": {
+        "cli_pattern": "{runtime} {skill_root}/{script} {flags}",
+        "args": [
+          {
+            "name": "price",
             "type": "number",
+            "required": true,
+            "flag": "--price",
             "description": "Original retail product price"
           },
-          "cogs": {
+          {
+            "name": "cogs",
             "type": "number",
+            "required": true,
+            "flag": "--cogs",
             "description": "Cost of Goods Sold (COGS)"
           },
-          "discount": {
+          {
+            "name": "discount",
             "type": "number",
-            "description": "Discount percentage (e.g. 20 for 20%)"
+            "required": false,
+            "flag": "--discount",
+            "description": "Discount percentage"
           },
-          "cac": {
+          {
+            "name": "cac",
             "type": "number",
-            "description": "Estimated Customer Acquisition Cost (CAC) per order"
+            "required": false,
+            "flag": "--cac",
+            "description": "Estimated Customer Acquisition Cost (CAC)"
           },
-          "json": {
+          {
+            "name": "json",
             "type": "boolean",
+            "required": false,
+            "default": true,
+            "flag": "--json",
             "description": "Output structured JSON metrics"
           }
-        },
-        "required": ["price", "cogs"]
+        ]
       },
-      "cli_pattern": "python {entrypoint} --price {price} --cogs {cogs} --discount {discount} --cac {cac} --json",
-      "isolation_recommended": false
+      "output": {
+        "format": "json",
+        "channel": "stdout"
+      },
+      "runtime_requirements": {
+        "isolation_recommended": false,
+        "dependencies": []
+      },
+      "invoked_by_commands": ["promotions", "growth"]
+    }
+  ],
+  "decision_gates": [
+    {
+      "command": "brief",
+      "description": "Decision gate evaluating market context, audience register, brand voice, and offer model before marketing copy generation.",
+      "decisions": [
+        {
+          "key": "target_market",
+          "description": "Target regional market and cultural calibration",
+          "type": "enum",
+          "options": ["gcc", "egypt_levant", "global_saas", "bilingual_mena"],
+          "default": "bilingual_mena",
+          "priority": 1,
+          "discovery": [
+            {
+              "source": "local_file",
+              "path": "brand.json",
+              "json_path": "$.targetMarket",
+              "track_staleness": true
+            },
+            {
+              "source": "local_file",
+              "path": "BRAND-GUIDELINES.md",
+              "track_staleness": true
+            },
+            {
+              "source": "brain_ki",
+              "ki_type": "project"
+            }
+          ],
+          "persist_to": {
+            "local": { "path": ".tidyfactor/marketing-brief.snapshot.json" },
+            "brain_ki": {
+              "sync_direction": "outbound_push_only",
+              "requires_flag": "--sync-brain"
+            }
+          }
+        },
+        {
+          "key": "brand_voice",
+          "description": "Brand voice archetype and tone register",
+          "type": "enum",
+          "options": ["authoritative_challenger", "empathetic_guide", "elite_luxury", "high_energy_direct_response"],
+          "default": "authoritative_challenger",
+          "priority": 2,
+          "discovery": [
+            {
+              "source": "local_file",
+              "path": "brand.json",
+              "json_path": "$.voice.archetype",
+              "track_staleness": true
+            },
+            {
+              "source": "local_file",
+              "path": "BRAND-GUIDELINES.md",
+              "track_staleness": true
+            },
+            {
+              "source": "brain_ki",
+              "ki_type": "project"
+            }
+          ],
+          "persist_to": {
+            "local": { "path": ".tidyfactor/marketing-brief.snapshot.json" },
+            "brain_ki": {
+              "sync_direction": "outbound_push_only",
+              "requires_flag": "--sync-brain"
+            }
+          }
+        },
+        {
+          "key": "funnel_stage",
+          "description": "Primary conversion funnel focus",
+          "type": "enum",
+          "options": ["tofu_lead_magnet", "mofu_trial_demo", "bofu_direct_sale"],
+          "default": "bofu_direct_sale",
+          "priority": 3,
+          "discovery": [
+            {
+              "source": "local_file",
+              "path": ".tidyfactor/marketing-brief.md"
+            }
+          ],
+          "persist_to": {
+            "local": { "path": ".tidyfactor/marketing-brief.snapshot.json" }
+          }
+        },
+        {
+          "key": "core_offer",
+          "description": "Value proposition and main transaction vehicle",
+          "type": "string",
+          "default": "Direct Product Offer",
+          "priority": 4,
+          "discovery": [
+            {
+              "source": "local_file",
+              "path": "brand.json",
+              "json_path": "$.offer.headline",
+              "track_staleness": true
+            }
+          ],
+          "persist_to": {
+            "local": { "path": ".tidyfactor/marketing-brief.snapshot.json" }
+          }
+        }
+      ]
     }
   ]
 }
