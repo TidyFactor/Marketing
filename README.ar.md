@@ -190,19 +190,30 @@ tidyfactor-marketing/
 
 ---
 
-## 🚀 البدء السريع ومعالج سطر الأوامر
+## 🚀 التثبيت والبدء السريع
 
-### الخيار 1: المعالج التفاعلي عبر سطر الأوامر
-شغّل المعالج التفاعلي خطوة بخطوة في الطرفية (Terminal):
+اختر طريقة التثبيت المناسبة لمشروعك:
+
+### الخيار (أ): عبر TidyFactor CLI الرسمي (الموصى به)
+التثبيت الفوري دون الحاجة لتثبيت الأداة عالمياً في بيئة عملك النشطة:
 ```bash
-npx @tidyfactor/cli-marketing
+npx @tidyfactor/cli add marketing
 ```
-*يطلب منك تحديد مجال المشروع، والسوق المستهدف (عالمي أو عربي)، والتركيز الأساسي (B2B أو متاجر إلكترونية أو المنظومة الشاملة).*
-
-### الخيار 2: الحقن المباشر في أي مشروع
-احقن كامل ملفات المهارة في مسار `.agents/skills/tidyfactor-marketing/` بنقرة واحدة:
+*أو في حال كانت الأداة مثبتة لديك عالمياً (`npm i -g @tidyfactor/cli`):*
 ```bash
-npx @tidyfactor/cli-marketing add-skill
+tidyfactor add marketing
+```
+
+### الخيار (ب): عبر معيار مهارات الوكلاء المفتوح (skills.sh)
+التثبيت العالمي المتوافق مع كافة بيئات الوكلاء ومحررات الذكاء الاصطناعي (Antigravity, Cursor, Claude Code, Windsurf, Codex):
+```bash
+npx skills add tidyfactor/marketing
+```
+
+### الخيار (ج): التثبيت المباشر الفردي عبر NPM
+تشغيل مثبت المهارة المستقل مباشرة مع تجاوز الذاكرة المخبأة وضمان أحدث إصدار:
+```bash
+npx @tidyfactor/marketing@latest
 ```
 
 ### الخيار 3: أوامر Slash للوكلاء الأذكياء (Claude, Antigravity, Cursor)
