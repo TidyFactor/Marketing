@@ -51,7 +51,7 @@ Before emitting loyalty programs, referral systems, or outreach scripts, evaluat
 
 ---
 
-## Validation Checklist
+## Validation checklist
 
 - [ ] CDL brief parameters resolved from `.tidyfactor/marketing-brief.md` or prompt defaults
 - [ ] Retention drop-off point diagnosed before prescribing loyalty mechanics

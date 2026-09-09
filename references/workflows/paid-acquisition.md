@@ -54,7 +54,7 @@ Before emitting ad copy or landing page wireframes, evaluate against all 7 axes 
 
 ---
 
-## Validation Checklist
+## Validation checklist
 
 - [ ] CDL brief parameters resolved from `.tidyfactor/marketing-brief.md` or prompt defaults
 - [ ] At least 3 distinct psychological ad copy angles produced

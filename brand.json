@@ -1,13 +1,13 @@
 {
   "name": "TidyFactor Marketing",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "schemaVersion": "brand-core-v2",
   "meta": {
     "product": "TidyFactor Marketing Engine",
     "tagline": "AI Direct Response & 360° Growth Marketing Engine",
     "description": "A production-grade, AI-native marketing and growth engine following TidyFactor Skill architecture. Handles 7 pillars and 28 capabilities with zero fluff, data-backed metrics, quantitative benchmarks, and platform-native direct-response conversion frameworks.",
-    "version": "1.5.0",
-    "lastUpdated": "2026-09-02"
+    "version": "1.6.0",
+    "lastUpdated": "2026-09-09"
   },
   "identity": {
     "logo": {
@@ -19,7 +19,7 @@
       "minSizePx": 24
     },
     "socialPreview": {
-      "ogImage": "assets/og-default.png",
+      "ogImage": "assets/hero-banner.png",
       "ogDimensions": "1200x630"
     }
   },

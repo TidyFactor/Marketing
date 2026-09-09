@@ -56,7 +56,7 @@ Before emitting the final content assets, evaluate against all 7 axes from `../m
 
 ---
 
-## Validation Checklist
+## Validation checklist
 
 - [ ] CDL brief parameters resolved from `.tidyfactor/marketing-brief.md` or prompt defaults
 - [ ] Every post includes a 0-3s attention hook matching platform specs

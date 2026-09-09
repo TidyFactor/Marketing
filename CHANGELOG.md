@@ -2,6 +2,30 @@
 
 All notable changes to the **[@tidyfactor/marketing](https://www.npmjs.com/package/@tidyfactor/marketing)** package will be documented in this file.
 
+## [1.6.0] - 2026-09-09
+
+### 🏛️ Added — 6-Axis Periodic Review Protocol, YAML Primacy & Asset Hygiene
+- **Command & CDL v2.0 Upgrades (`Axis 1`)**:
+  - Registered `references/commands/audit.md` for direct-response copy auditing and AI cliché detection.
+  - Enhanced `references/commands/brief.md` and `references/workflows/brief.md` with CDL v2.0 Native Modal Wizard (`ask_question`) and `/debate` trigger for relentless marketing stress-testing.
+- **Single Outcome & Workflow Checklists (`Axis 2`)**:
+  - Enforced mandatory `## Validation checklist` across all 8 workflow files with binary pass/fail criteria.
+- **Rule 15 YAML Primacy & Operational Memory (`Axis 3`)**:
+  - Introduced `brand.yaml` for ~40% token efficiency over JSON; updated manifest discovery to prioritize YAML.
+  - Added `references/memory/naming-conventions.md` establishing universal 5-token campaign taxonomy and lowercase UTM rules.
+  - Added `references/memory/campaign-mindmap.md` containing Mermaid architectures for the 7 marketing pillars and lead flow.
+  - Refreshed freshness stamp on `references/memory/philosophy.md`.
+- **Deterministic Tooling & Asset Hygiene Engine (`Axis 4`)**:
+  - Added `scripts/clean_orphaned_assets.py` detecting SHA-256 binary duplicate assets and unreferenced orphan files.
+  - Upgraded `tools/validate_skill.py` to 13-point comprehensive release validator.
+- **Governance & Evaluation Scenarios (`Axis 5`)**:
+  - Added `tests/scenarios.md` with 4 production evaluation scenarios (GCC flash sale, B2B SaaS launch, Egypt abandoned cart, copy linter).
+  - Synchronized SemVer `1.6.0` atomically across all metadata.
+- **Asset Bloat Elimination (`Axis 6`)**:
+  - Deleted duplicate `assets/og-default.png` (245.5 KB) and root orphan `image.jpg` (64.9 KB), reclaiming ~310 KB in package archive.
+
+---
+
 ## [1.5.0] - 2026-09-02
 
 ### 🧠 Added — Contextual Decision Layer (CDL v1.1.0) & Declarative Decision Gates

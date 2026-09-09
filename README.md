@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 TidyFactor Marketing `v1.3.0`
+# 🚀 TidyFactor Marketing `v1.6.0`
 ### AI Direct-Response Marketing, Contextual Decision Layer & Anti-Slop Content Suite
 
 **The official marketing & customer acquisition foundation for the TidyFactor Ecosystem.**
