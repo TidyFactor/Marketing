@@ -1,7 +1,7 @@
 {
   "name": "@tidyfactor/marketing",
-  "version": "1.5.0",
-  "description": "TidyFactor Marketing — AI Direct-Response Marketing, Pillar-Cluster SEO & Multi-Channel Growth Engine with Contextual Decision Layer (CDL)",
+  "version": "1.7.0",
+  "description": "TidyFactor Marketing — AI Direct-Response Marketing, Pillar-Cluster SEO, GEO & Multi-Channel Growth Engine with Contextual Decision Layer (CDL)",
   "main": "SKILL.md",
   "bin": {
     "tidyfactor-marketing": "./bin/create-kit.js",
@@ -66,10 +66,12 @@
     "VISION.md",
     "assets",
     "bin",
+    "brand.yaml",
     "brand.json",
     "manifest.json",
     "references",
     "scripts",
+    "tests",
     "tools"
   ]
 }

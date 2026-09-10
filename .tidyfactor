@@ -2,10 +2,10 @@
   "ecosystem": "tidyfactor",
   "track": "marketing",
   "name": "tidyfactor-marketing",
-  "version": "1.5.0",
+  "version": "1.7.0",
   "npmPackage": "@alwkala/tidyfactor-marketing",
   "github": "https://github.com/TidyFactor/Marketing",
-  "skillFile": "../tidyfactor-marketing-v1.5.0.skill",
+  "skillFile": "../tidyfactor-marketing-v1.7.0.skill",
   "category": "marketing-engine",
   "type": "direct-response-growth",
   "outputs": [
@@ -32,7 +32,8 @@
     "email",
     "advertising",
     "promotions",
-    "growth"
+    "growth",
+    "audit"
   ],
   "visionRef": "../TidyFactor-VISION.md",
   "sibling": [

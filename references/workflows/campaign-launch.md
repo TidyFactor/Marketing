@@ -60,7 +60,7 @@ Before emitting the final strategy, evaluate against all 7 axes from `../memory/
 
 ---
 
-## Validation Checklist
+## Validation checklist
 
 - [ ] CDL brief parameters resolved from `.tidyfactor/marketing-brief.md` or prompt defaults
 - [ ] Canonical positioning statement formulated with concrete proof (no generic slogans)

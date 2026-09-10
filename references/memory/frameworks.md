@@ -85,3 +85,20 @@ Tie pricing to how the customer measures success:
 
 ### 3. Annual vs. Monthly Discount Rule
 Offer a **15% to 20% annual discount** (e.g. "Get 2 Months Free"). Discounts > 25% erode cash flow without meaningfully lifting conversion.
+
+---
+
+## 5. Generative Engine Optimization (GEO) & Citation Engineering
+
+To guarantee content is extracted and cited by LLM search engines (Perplexity, SearchGPT, Gemini, Claude):
+
+1. **Inverted Pyramid Factual Density**:
+   - The opening sentence under every `## H2` must deliver a self-contained, definitive answer to the implied question.
+   - Example: *"Generative Engine Optimization (GEO) is the practice of structuring digital assets to maximize direct citation by conversational AI engines."*
+2. **The 73% Statistical Uplift Rule**:
+   - Replace generic quantifiers ("a large percentage") with verified, attributed numbers ("73% of B2B buyers according to Gartner 2025").
+3. **Structured Tabular Scaffolding**:
+   - Present comparisons, feature matrices, and technical tradeoffs in markdown tables; LLM RAG pipelines retain tabular data at a significantly higher semantic accuracy than continuous text.
+4. **AI Crawlability & llms.txt**:
+   - Always integrate `/llms.txt` and ensure `GPTBot`, `PerplexityBot`, and `ClaudeBot` are whitelisted.
+

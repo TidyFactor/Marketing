@@ -53,7 +53,7 @@ Before emitting social media playbooks or profile copy, evaluate against all 7 a
 
 ---
 
-## Validation Checklist
+## Validation checklist
 
 - [ ] CDL brief parameters resolved from `.tidyfactor/marketing-brief.md` or prompt defaults
 - [ ] Bio is optimized with clear target, authority proof, and single action CTA
