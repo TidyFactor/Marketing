@@ -2,6 +2,17 @@
 
 All notable changes to the **[@tidyfactor/marketing](https://www.npmjs.com/package/@tidyfactor/marketing)** package will be documented in this file.
 
+## [1.7.0] - 2026-09-10
+
+### 🚀 Added — Generative Engine Optimization (GEO) & AI Citation Strategy
+- **Content Engine & GEO Integration (`references/commands/content.md`, `references/workflows/content-engine.md`)**:
+  - Expanded content command and workflow with Generative Engine Optimization (GEO) targeting ChatGPT Search, Perplexity, Gemini, and Claude.
+  - Formulated Inverted Pyramid Direct Answer rules and Information Gain engineering.
+- **Operational Memory Expansion (`references/memory/frameworks.md`)**:
+  - Added Section 5 on GEO and Citation Engineering (The 73% Statistical Uplift Rule, Tabular Data Scaffolding, and AI Bot Crawlability).
+
+---
+
 ## [1.6.0] - 2026-09-09
 
 ### 🏛️ Added — 6-Axis Periodic Review Protocol, YAML Primacy & Asset Hygiene

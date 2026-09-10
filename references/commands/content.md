@@ -7,7 +7,7 @@ Runtime dispatcher for Social Media Content Batches, SEO Strategy & Pillar Pages
 ## Capabilities Handled
 
 1. **Social Media Content Batch**: Multi-platform post batches with 3-second hooks, line-break rhythm, and actionable CTAs.
-2. **SEO Strategy (Pillar + Cluster)**: Pillar page architecture, long-tail cluster topics, search intent mapping (Informational, Commercial, Transactional).
+2. **SEO & GEO Strategy (Pillar + Cluster & AI Answers)**: Pillar page architecture, long-tail cluster topics, search intent mapping (Informational, Commercial, Transactional), and Generative Engine Optimization (evidence-backed direct answers, information gain, and statistics for AI citations).
 3. **Content Calendar**: Weekly/monthly scheduling grids with content pillars (Authority, Contrarian, Tactical, Culture).
 4. **Newsletter Strategy**: High-open newsletter layouts (Curiosity A/B subject lines, Hook-Story-Offer narrative, primary CTAs).
 

@@ -25,11 +25,15 @@ Using `../memory/platform-specs.md` and `../memory/frameworks.md`:
 - Write high-retention body copy with line-break rhythm, bulleted insights, and zero filler prose.
 - Attach specific, low-friction **Calls-to-Action (CTAs)**.
 
-### 3. SEO Pillar + Cluster Strategy (If SEO Intent)
+### 3. SEO & GEO (Generative Engine Optimization) Strategy (If SEO/GEO Intent)
 Using `../memory/frameworks.md`:
 - Map target keywords across **3 Intent Buckets**: Informational (TOFU), Commercial (MOFU), and Transactional (BOFU).
 - Formulate 1 comprehensive **Pillar Guide** (2,500 - 3,500 words).
 - Architect 3-5 **Supporting Cluster Posts** targeting long-tail queries with bidirectional internal linking.
+- **GEO & AI Citation Engineering**:
+  - Inverted Pyramid Direct Answers: First 2 sentences under every heading give the direct factual solution.
+  - Information Gain: Inject named statistics, verified benchmarks, and proprietary case findings to increase AI extraction probability.
+  - Machine Discovery: Ensure `/llms.txt` references and Schema FAQ/Article markup.
 - Review Technical & On-Page checklist (H1/H2 hierarchy, Title/Meta caps, Schema markup).
 
 ### 4. Editorial Calendar & Distribution Grid
