@@ -17,7 +17,7 @@ $$\text{Unknowns} = \text{Required Decisions} - (\text{Discovered Facts} \cup \t
 - `core_offer`: Headline value proposition and transaction vehicle.
 
 ### 2. Discovered Facts (Auto-Sensing + Local Staleness Tracking):
-- Inspect `brand.json` and `BRAND-GUIDELINES.md` on disk.
+- Inspect `brand.yaml`, `brand.json`, and `BRAND-GUIDELINES.md` on disk.
 - If `track_staleness: true` is configured, verify file hash/mtime against stored snapshot.
 - Any decision successfully extracted from local disk is removed from $\text{Unknowns}$.
 
@@ -29,31 +29,40 @@ $$\text{Unknowns} = \text{Required Decisions} - (\text{Discovered Facts} \cup \t
 
 ---
 
-## 💬 Step 1: Interactive Disclosure & Micro-Discovery
+## 💬 Step 1: Interactive Modal Protocol (CDL v2.0)
 
 If $\text{Unknowns} = \emptyset$:
 - Display the synthesized 4-line baseline summary.
 - Suggest next commands (`/strategy`, `/advertising`, `/email`, `/content`) immediately.
 
 If $\text{Unknowns} \neq \emptyset$:
-> **Anti-Bot Invariant**: Strictly forbid bot persona greetings (*"أهلاً بك بصفتي خبير التسويق..."*) or conversational filler. Present genuine Unknowns interactively with structured A/B/C/D options and highlighted recommendations:
+- **Interactive Wizard Invariant**: Present genuine Unknowns exclusively via the native interactive question tool (`ask_question`). Never dump static text questionnaires or bullet lists in chat.
+- **Zero Robotic Preamble**: Forbid greetings or conversational filler.
 
-### Question 1: Target Market & Regional Tone (`target_market`)
-- **(A) Gulf / GCC (Saudi Arabia 🇸🇦, UAE 🇦🇪, Kuwait 🇰🇼, Qatar 🇶🇦)** — High prestige, trust-first, WhatsApp/Installments framing, modern polished Arabic.
-- **(B) Egypt & Levant (Egypt 🇪🇬, Jordan 🇯🇴)** — Practical ROI, high energy, relatable wit, cash-on-delivery & InstaPay framing.
-- **(C) Global / B2B SaaS** — Direct, metric-dense, self-serve focused, English-first.
-- **(D) (Recommended) Bilingual / Unified MENA** — Pan-Arab modern standard with English tech pairing.
+### Operational Mode Selection:
 
-### Question 2: Brand Voice Archetype (`brand_voice`)
-- **(A) (Recommended) Authoritative Challenger** — Direct, contrarian, proof-backed, no-nonsense.
-- **(B) Empathetic Guide** — Supportive, story-driven, transformational, warm.
-- **(C) Elite Luxury / High-End** — Minimalist, aspirational, refined confidence.
-- **(D) High-Energy Direct Response** — Urgent, benefit-stacked, conversion-focused.
+#### [MODE A] Smart 3-Round Protocol (🎯 الارتجال الذكي المقيد)
+Presents structured choices one step at a time via `ask_question`:
+1. **Round 1 (Target Market & Regional Nuance)**:
+   - `(Recommended) Bilingual / Unified MENA` — Pan-Arab modern standard paired with English tech terminology.
+   - `Gulf / GCC (Saudi Arabia 🇸🇦, UAE 🇦🇪, Kuwait 🇰🇼, Qatar 🇶🇦)` — Prestige, trust-first, WhatsApp/Installment framing.
+   - `Egypt & Levant (Egypt 🇪🇬, Jordan 🇯🇴)` — Practical ROI, high energy, relatable wit, InstaPay framing.
+   - `Global / B2B SaaS` — Direct, metric-dense, self-serve focused, English-first.
+2. **Round 2 (Brand Voice Archetype)**:
+   - `(Recommended) Authoritative Challenger` — Direct, contrarian, proof-backed, zero-nonsense.
+   - `Empathetic Guide` — Supportive, story-driven, transformational, warm.
+   - `Elite Luxury / High-End` — Minimalist, aspirational, refined confidence.
+   - `High-Energy Direct Response` — Urgent, benefit-stacked, conversion-focused.
+3. **Round 3 (Funnel Focus & Core Offer)**:
+   - `(Recommended) Bottom-of-Funnel Direct Sale / Promo` — Immediate transaction, launch offer.
+   - `Middle-of-Funnel Trial / Demo` — Product-led trial, strategy session.
+   - `Top-of-Funnel Lead Magnet` — Free high-value guide, benchmark, audit.
 
-### Question 3: Funnel Focus & Core Offer (`funnel_stage` + `core_offer`)
-- **(A) Top-of-Funnel Lead Magnet** — Free guide, checklist, audit, quiz.
-- **(B) Middle-of-Funnel Trial / Demo** — Product-led trial, 1-on-1 strategy call.
-- **(C) (Recommended) Bottom-of-Funnel Direct Sale / Promo** — E-commerce purchase, limited-time launch offer.
+#### [MODE B] Debate Mode (🔥 الاستجواب والمناظرة اللانهائية)
+- Activated via `/debate`, explicit user prompt ("مناظرة" / "استجوبني"), or Mode A escalation.
+- Relentlessly challenges marketing assumptions, price elasticity, CAC-to-LTV payback periods, and unproven claims.
+- Presents binary architectural trade-offs one step at a time via `ask_question`.
+- Terminates only upon explicit user trigger (`"END DEBATE"` / `"اعتماد"`), emitting a formal synthesis.
 
 ---
 
@@ -72,7 +81,7 @@ If $\text{Unknowns} \neq \emptyset$:
 - **Last Updated**: [Current Date]
 ```
 
-2. Format snapshot `.tidyfactor/marketing-brief.snapshot.json` for deterministic local staleness tracking.
+2. Format YAML snapshot `.tidyfactor/marketing-brief.snapshot.yaml` for deterministic local staleness tracking (Rule 15).
 
 3. **Anti-Dual-Write Outbound Push (`--sync-brain`)**:
    - The local file is ALWAYS the single source of truth.
@@ -87,15 +96,16 @@ Stamp the 7-axis critique:
 ```markdown
 /* Pre-emit critique: P5 H5 E5 S5 R5 V5 D5 */
 ```
-Display a concise summary and suggest the next logical marketing command (`/strategy`, `/advertising`, `/email`, `/content`).
+Display a concise summary and suggest the next logical marketing command (`/strategy`, `/advertising`, `/email`, `/content`, `/audit`).
 
 ---
 
-## ## Validation checklist
+## Validation checklist
 
 - [ ] Context Delta Resolution computed prior to prompting user.
 - [ ] No questions asked for parameters already discovered on disk.
+- [ ] Unknowns presented via native interactive modal tool (`ask_question`).
 - [ ] `.tidyfactor/marketing-brief.md` created or verified on disk.
 - [ ] Regional calibration (GCC, Egypt, Global) explicitly recorded.
 - [ ] Brand voice archetype explicitly recorded.
-- [ ] Confirmed baseline summary displayed to user with next command suggestions (`/strategy`, `/advertising`, `/email`, `/content`).
+- [ ] Confirmed baseline summary displayed to user with next command suggestions.

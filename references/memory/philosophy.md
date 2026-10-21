@@ -1,4 +1,6 @@
+<!-- last-verified: 2026-09-09 -->
 # Marketing Philosophy: Audience-First Growth & Direct Response Principles
+
 
 *(Note: Human-facing document. Never referenced by operational commands or execution agents).*
 

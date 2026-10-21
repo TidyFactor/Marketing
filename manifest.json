@@ -96,6 +96,36 @@
         "dependencies": []
       },
       "invoked_by_commands": ["promotions", "growth"]
+    },
+    {
+      "name": "clean_orphaned_assets",
+      "description": "Scans image assets for SHA-256 binary duplicates, unreferenced orphan files, and compression opportunities.",
+      "entrypoint": {
+        "runtime": "python3",
+        "script": "scripts/clean_orphaned_assets.py"
+      },
+      "invocation": {
+        "cli_pattern": "{runtime} {skill_root}/{script} {flags}",
+        "args": [
+          {
+            "name": "check",
+            "type": "boolean",
+            "required": false,
+            "default": false,
+            "flag": "--check",
+            "description": "Run check mode returning non-zero if issues exist"
+          }
+        ]
+      },
+      "output": {
+        "format": "text",
+        "channel": "stdout"
+      },
+      "runtime_requirements": {
+        "isolation_recommended": false,
+        "dependencies": []
+      },
+      "invoked_by_commands": ["audit"]
     }
   ],
   "decision_gates": [
@@ -113,6 +143,12 @@
           "discovery": [
             {
               "source": "local_file",
+              "path": "brand.yaml",
+              "json_path": "$.targetMarket",
+              "track_staleness": true
+            },
+            {
+              "source": "local_file",
               "path": "brand.json",
               "json_path": "$.targetMarket",
               "track_staleness": true
@@ -128,7 +164,7 @@
             }
           ],
           "persist_to": {
-            "local": { "path": ".tidyfactor/marketing-brief.snapshot.json" },
+            "local": { "path": ".tidyfactor/marketing-brief.snapshot.yaml" },
             "brain_ki": {
               "sync_direction": "outbound_push_only",
               "requires_flag": "--sync-brain"
@@ -143,6 +179,12 @@
           "default": "authoritative_challenger",
           "priority": 2,
           "discovery": [
+            {
+              "source": "local_file",
+              "path": "brand.yaml",
+              "json_path": "$.voice.archetype",
+              "track_staleness": true
+            },
             {
               "source": "local_file",
               "path": "brand.json",
@@ -160,7 +202,7 @@
             }
           ],
           "persist_to": {
-            "local": { "path": ".tidyfactor/marketing-brief.snapshot.json" },
+            "local": { "path": ".tidyfactor/marketing-brief.snapshot.yaml" },
             "brain_ki": {
               "sync_direction": "outbound_push_only",
               "requires_flag": "--sync-brain"
@@ -181,7 +223,7 @@
             }
           ],
           "persist_to": {
-            "local": { "path": ".tidyfactor/marketing-brief.snapshot.json" }
+            "local": { "path": ".tidyfactor/marketing-brief.snapshot.yaml" }
           }
         },
         {
@@ -193,13 +235,19 @@
           "discovery": [
             {
               "source": "local_file",
+              "path": "brand.yaml",
+              "json_path": "$.offer.headline",
+              "track_staleness": true
+            },
+            {
+              "source": "local_file",
               "path": "brand.json",
               "json_path": "$.offer.headline",
               "track_staleness": true
             }
           ],
           "persist_to": {
-            "local": { "path": ".tidyfactor/marketing-brief.snapshot.json" }
+            "local": { "path": ".tidyfactor/marketing-brief.snapshot.yaml" }
           }
         }
       ]

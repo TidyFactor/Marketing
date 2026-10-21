@@ -44,7 +44,7 @@ Before emitting the final email copy or flows, evaluate against all 7 axes from 
 
 ---
 
-## Validation Checklist
+## Validation checklist
 
 - [ ] CDL brief parameters resolved from `.tidyfactor/marketing-brief.md` or prompt defaults
 - [ ] Lead magnet promises a specific, actionable win achievable in < 10 minutes
