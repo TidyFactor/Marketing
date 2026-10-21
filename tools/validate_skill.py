@@ -173,8 +173,16 @@ def main():
         else:
             fm_raw = fm_match.group(1)
             try:
-                import yaml
-                fm_data = yaml.safe_load(fm_raw)
+                try:
+                    import yaml
+                    fm_data = yaml.safe_load(fm_raw)
+                except ImportError:
+                    fm_data = {}
+                    for line in fm_raw.splitlines():
+                        if ":" in line and not line.strip().startswith("#"):
+                            k, v = line.split(":", 1)
+                            fm_data[k.strip()] = v.strip().strip('"').strip("'")
+
                 if not isinstance(fm_data, dict):
                     errors.append("SKILL.md frontmatter must parse into a mapping/dict.")
                 else:

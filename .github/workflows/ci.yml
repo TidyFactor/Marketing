@@ -32,5 +32,8 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Install Validation Dependencies
+        run: pip install pyyaml
+
       - name: Run Integrity Validation
         run: python tools/validate_skill.py
