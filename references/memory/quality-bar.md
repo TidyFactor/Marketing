@@ -1,4 +1,4 @@
-<!-- last-verified: 2026-09-02 -->
+<!-- last-verified: 2026-11-11 -->
 # Marketing Quality Bar & 7-Axis Pre-Emit Self-Critique
 
 > **Purpose**: Enforces strict anti-slop marketing standards, conversion mechanics, and regional calibration across all copywriting, ads, emails, and campaign strategies.
@@ -54,3 +54,14 @@ The following phrases and generic filler patterns are **STRICTLY PROHIBITED** in
 ### 3. Global / B2B SaaS (US / Europe)
 - **Tone**: Direct, concise, metric-dense, self-serve focused.
 - **Conversion Channels**: Stripe, frictionless freemium / instant calendar booking.
+
+---
+
+## ⚖️ B2B Data Privacy, Integrity & Zero-Padding Invariants
+
+1. **Corporate Scope Only**: Target registered business entities, institutions, and documented commercial titles. Strictly prohibit targeting private donors, personal residences, or individual consumer profiles.
+2. **Zero Guessed or Constructed Contacts**: Never synthesize or pattern-generate email addresses (e.g. `first.last@domain.com`). Unobserved contact details remain strictly blank.
+3. **Mandatory Privacy Compliance & Opt-Out**: All cold outreach playbooks must mandate corporate sender transparency, verifiable legitimate interest, and an immediate, zero-friction opt-out mechanism conforming to Saudi PDPL, UAE Decree-Law 45/2021, and EU GDPR standards.
+4. **Zero Padding & Honest Reporting**: Report verified accounts truthfully against requested volume. Never pad databases with placeholder rows, duplicate branches, or fabricated entities.
+5. **Foreign Supplier Barrier Verification**: Label foreign market entry requirements (local content ratios, commercial agent registration, pre-qualification criteria) strictly as *"Verify locally"*, never as definitive legal counsel.
+

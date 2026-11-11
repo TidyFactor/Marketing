@@ -1,6 +1,6 @@
 ---
 name: tidyfactor-marketing
-description: "Production-grade AI marketing and growth engine with Contextual Decision Layer (CDL) & MENA Intelligence. Handles 7 pillars and 28 capabilities: brand voice, campaign strategy, product launches, SEO pillar-clusters, social media, email lifecycles, paid ads, and copy auditing. Trigger on commands 'brief', 'strategy', 'content', 'social', 'email', 'advertising', 'promotions', 'growth', 'audit', or requests for marketing plans, ad copy, and launch campaigns."
+description: "Production-grade AI marketing and growth engine with Contextual Decision Layer (CDL) & MENA Intelligence. Handles 8 pillars and 30 capabilities: brand voice, campaign strategy, product launches, SEO pillar-clusters, social media, email lifecycles, paid ads, B2B prospect intelligence, and copy auditing. Trigger on commands 'brief', 'strategy', 'content', 'social', 'email', 'advertising', 'promotions', 'growth', 'audit', 'prospects', or requests for marketing plans, ad copy, B2B lead lists, and launch campaigns."
 ---
 # TidyFactor Marketing Engine
 
@@ -9,7 +9,7 @@ A command dispatcher. This file routes marketing and growth intents to correspon
 ## Commands
 
 | User Intent | Command | What It Loads |
-|---|---|---|
+| --- | --- | --- |
 | **Discovery**: Strategic brief & baseline caching | `references/commands/brief.md` | `references/workflows/brief.md` + `references/memory/decision-points.md` |
 | **Strategy**: Brand voice, positioning & launch | `references/commands/strategy.md` | `references/workflows/campaign-launch.md` + `references/memory/frameworks.md` |
 | **Content**: SEO pillar-clusters & publishing | `references/commands/content.md` | `references/workflows/content-engine.md` + `references/memory/arabic-writing.md` |
@@ -19,6 +19,7 @@ A command dispatcher. This file routes marketing and growth intents to correspon
 | **Promotions**: Flash sales, decoy pricing & math | `references/commands/promotions.md` | `references/workflows/promo-conversion.md` + `references/memory/promotions-math.md` |
 | **Growth**: Referral loops, viral growth & retention | `references/commands/growth.md` | `references/workflows/viral-retention.md` + `references/memory/20-brain-baas-integration.md` |
 | **Audit**: Copy quality audit & cliché detection | `references/commands/audit.md` | `scripts/audit_copy.py` + `references/memory/quality-bar.md` |
+| **Prospects**: B2B accounts, buying system & verified lists | `references/commands/prospects.md` | `references/workflows/prospect-pipeline.md` + `references/memory/frameworks.md` |
 
 ## Non-Negotiable Quality Constraints
 
@@ -28,6 +29,7 @@ A command dispatcher. This file routes marketing and growth intents to correspon
 4. **Multi-Angle Requirement**: Ad generation must produce 3 psychological angles (Pain, ROI, Proof).
 5. **Margin Protection Rule**: Promos must verify gross margins with `calc_promo_math.py`.
 6. **Bilingual MENA Direct Response**: Compose Arabic copy natively per `references/memory/arabic-writing.md`.
+7. **B2B Privacy & Zero-Padding**: Corporate targeting only, zero guessed emails, mandatory opt-out, and 100% honest record counts.
 
 ## Anti-Triggers
 
@@ -39,6 +41,7 @@ A command dispatcher. This file routes marketing and growth intents to correspon
 - `audit_copy` (`scripts/audit_copy.py`): Sub-second AST & cliché linter.
 - `calc_promo_math` (`scripts/calc_promo_math.py`): Break-even ROAS & margin math.
 - `clean_orphaned_assets` (`scripts/clean_orphaned_assets.py`): SHA-256 duplicate & orphan cleaner.
+- `audit_prospects` (`scripts/audit_prospects.py`): 18-column schema, URL evidence & PDPL linter.
 
 ## Skill vs MCP Boundary (Rule 12)
 

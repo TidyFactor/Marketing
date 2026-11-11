@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 TidyFactor Marketing `v1.7.0`
+# 🚀 TidyFactor Marketing `v1.8.0`
 ### AI Direct-Response Marketing, Generative Engine Optimization (GEO), Contextual Decision Layer & Anti-Slop Content Suite
 
 **The official marketing & customer acquisition foundation for the TidyFactor Ecosystem.**
@@ -86,7 +86,7 @@ To prevent AI agents from generating disconnected or generic marketing campaigns
 
 ---
 
-## ⚡ 8 Marketing Commands & 28-Capability Registry
+## ⚡ 10 Marketing Commands & 30-Capability Registry
 
 Every capability is routed through a dedicated command file, executed via a single-outcome workflow, and informed by operational memory anchors:
 
@@ -123,6 +123,92 @@ Every capability is routed through a dedicated command file, executed via a sing
 | **7. Growth** | **2-Sided Referral Loops** | `/marketing growth` | "referral program", "viral loop", "برنامج إحالة" | `viral-retention.md` + `metrics-benchmarks.md` | Give $X / Get $Y incentive mechanics, post-purchase & NPS triggers, 3-tier milestone gamification |
 | **7. Growth** | **Influencer Outreach** | `/marketing growth` | "influencer outreach", "influencers", "تسويق المؤثرين" | `viral-retention.md` + `metrics-benchmarks.md` | Engagement vetting scorecard (> 3%), personalized cold DM/email scripts, tracking UTM codes |
 | **7. Growth** | **Brand Awareness Engine** | `/marketing growth` | "brand awareness", "pr outreach", "انتشار العلامة" | `viral-retention.md` + `frameworks.md` | Podcast/media pitching angles, co-marketing partnerships, 1-to-9 content repurposing flywheel |
+| **8. Prospects** | **B2B Account Intelligence & Prospect Lists** | `/marketing prospects` | "prospects", "leads", "b2b", "accounts", "buying-system", "قوائم عملاء" | `prospect-pipeline.md` + `frameworks.md` | 18-column sourced target-account database (.csv/.xlsx), fit scores, and executive intelligence brief |
+
+---
+
+## 🎯 B2B Account Intelligence & Prospect Pipeline (`/marketing prospects`)
+
+The `prospects` command equips autonomous agents and growth teams with a rigorous B2B market research and account-based marketing (ABM) engine. Instead of generating unverified text lists, it systematically investigates procurement ecosystems, maps high-leverage decision roles, and produces verified, scored databases.
+
+### 1. The 4-Role Buying System Architecture
+In B2B sales cycles, the end user is rarely the economic buyer. The engine maps procurement leverage across four distinct roles before compiling target accounts:
+
+```
+┌────────────────────────────────────────────────────────┐
+│               B2B BUYING SYSTEM LEVERAGE               │
+├─────────────────┬──────────────────────────────────────┤
+│ Decider         │ C-Suite / Managing Directors         │
+│ (صاحب القرار)   │ Holds budget authority & signs deal  │
+├─────────────────┼──────────────────────────────────────┤
+│ Influencer      │ Engineering Consultants / Architects │
+│ (المؤثر الفني)  │ Specifies BOQs & technical compliance│
+├─────────────────┼──────────────────────────────────────┤
+│ Gatekeeper      │ Procurement Officers / Committees    │
+│ (حارس البوابة)  │ Vendor pre-qualification pass/fail   │
+├─────────────────┼──────────────────────────────────────┤
+│ Channel Partner │ EPCs / Contractors / Distributors    │
+│ (شريك القناة)   │ High-leverage compounding re-orders  │
+└─────────────────┴──────────────────────────────────────┘
+```
+
+### 2. The Canonical 18-Column Prospect Matrix Schema
+All generated prospect datasets conform to an auditable 18-column standard:
+1. `ID` • 2. `Tier` • 3. `Fit score` (0–5) • 4. `Organization` • 5. `Segment` • 6. `Role in buying system` • 7. `Country` • 8. `City` • 9. `Why it fits` • 10. `Evidence URL` • 11. `Best first channel` • 12. `Public business contact` • 13. `Named contact + title` • 14. `Outreach hook` • 15. `Timing note` • 16. `Status` • 17. `Verified on` • 18. `Confidence`
+
+### 3. Quantitative Fit Scoring (0 to 5 Points)
+- **Relevance (+1)**: Documented activity matching the offering.
+- **Authority / Budget (+1)**: Financial footprint confirms payment capacity.
+- **Reachability (+1)**: Active, verified public business contact channel exists.
+- **Proximity (+1)**: Alignment with prior case studies, market footprint, or region.
+- **Timing (+1)**: Active tender, construction phase, or fiscal budget cycle within 3–6 months.
+- **Tiers**: `Tier A` (4–5), `Tier B` (3), `Tier C` (≤ 2).
+
+### 4. Privacy & Regulatory Compliance Invariants
+- **Corporate Focus Only**: Never targets private donors, residential homeowners, or personal consumers.
+- **Zero Guessed Contacts**: Strictly prohibits pattern-generating emails (`first.last@`). Unobserved fields stay blank.
+- **Regulatory Compliance**: Mandatory corporate sender transparency, verifiable legitimate interest, and an immediate opt-out mechanism conforming to the Saudi Personal Data Protection Law (PDPL), UAE Federal Decree-Law No. 45/2021, and EU GDPR.
+- **Zero Padding**: 100% honest reporting; verified count matches actual discoveries without filler rows.
+
+### 5. How to Run & Validate
+
+#### Universal Cross-Industry Invocations (In Agent Chat):
+The engine is completely domain-agnostic and adapts dynamically to any business model, vertical, geography, or ticket size:
+
+- **Global B2B SaaS (Developer Tools / US & Europe):**
+  ```markdown
+  /marketing prospects "Build a verified list of 40 VP of Engineering & DevOps lead contacts at Series-B Fintech startups in the US and UK for our SQLite-native observability tool"
+  ```
+
+- **Commercial EPC & Architectural Construction (Saudi Arabia 🇸🇦):**
+  ```markdown
+  /marketing prospects "Build a sourced list of 40 commercial MEP, lighting, and fit-out contractors in Riyadh and Jeddah with verified public contacts and evidence URLs"
+  ```
+
+- **Enterprise Professional Services & LegalTech (UAE / Dubai 🇦🇪):**
+  ```markdown
+  /marketing prospects "Map top 30 corporate law firms and Tier-1 audit practices in Dubai and Abu Dhabi evaluating legal AI automation workflows"
+  ```
+
+- **FMCG & Food Distribution (Kuwait 🇰🇼 & Qatar 🇶🇦):**
+  ```markdown
+  /marketing prospects "Identify 35 supermarket procurement directors and wholesale FMCG food distributors in Kuwait and Qatar for a premium date manufacturer"
+  ```
+
+- **Hospitality & Wholesale Tourism (Egypt 🇪🇬 & Mediterranean):**
+  ```markdown
+  /marketing prospects "Compile 40 inbound tour operators and wholesale travel agencies in Egypt and Italy specializing in luxury eco-tourism expeditions"
+  ```
+
+#### Automated CLI Schema & Privacy Linter:
+Run the deterministic auditor against any generated dataset:
+```bash
+# Formatted terminal audit
+python scripts/audit_prospects.py data/prospects/ksa-contractors-2026.csv
+
+# Machine-readable JSON report
+python scripts/audit_prospects.py data/prospects/ksa-contractors-2026.csv --json
+```
 
 ---
 
@@ -232,6 +318,7 @@ Trigger specialized growth workflows directly inside your agent chat:
 /marketing email     "Generate a 5-part welcome onboarding drip for our developer newsletter"
 /marketing promo     "Design a 72-hour flash sale with margin protection and Tabby installments"
 /marketing growth    "Diagnose churn drop-offs and design a 2-sided customer referral loop"
+/marketing prospects "Build a sourced list of 40 commercial MEP and lighting contractors in KSA"
 ```
 
 ---

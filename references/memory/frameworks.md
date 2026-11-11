@@ -1,4 +1,4 @@
-<!-- last-verified: 2026-09-02 -->
+<!-- last-verified: 2026-11-11 -->
 # Marketing Memory: Copywriting, Psychological Models & Positioning
 
 Operational direct-response frameworks, 12 psychological mental models, B2B ICP definitions, anti-cliché replacement rules, and SaaS pricing architectures.
@@ -101,4 +101,32 @@ To guarantee content is extracted and cited by LLM search engines (Perplexity, S
    - Present comparisons, feature matrices, and technical tradeoffs in markdown tables; LLM RAG pipelines retain tabular data at a significantly higher semantic accuracy than continuous text.
 4. **AI Crawlability & llms.txt**:
    - Always integrate `/llms.txt` and ensure `GPTBot`, `PerplexityBot`, and `ClaudeBot` are whitelisted.
+
+---
+
+## 6. B2B Buying System & Procurement Leverage Models
+
+In B2B sales cycles, the end user is rarely the economic buyer. High-leverage marketing and sales development target the intermediaries who specify, approve, or aggregate purchases:
+
+### The 4 Core Roles in B2B Procurement
+
+| Role | Operational Definition | Target Profiles | Sales Cycle Leverage |
+|---|---|---|---|
+| **Decider (صاحب القرار)** | Holds P&L budget authority and signs contracts. | CEO, Managing Director, Head of Procurement, General Manager. | High authority, low availability; requires executive-level ROI proof. |
+| **Influencer (المؤثر الفني)** | Drafts technical specifications, BOQs, or RFP requirements. | Engineering Consultants, Technical Directors, Architects, Specifiers. | Maximum pre-bid leverage: getting specified in technical requirements locks out competition early. |
+| **Gatekeeper (حارس البوابة)** | Enforces vendor qualification checklists and compliance filters. | Vendor Managers, Procurement Officers, Committee Secretaries. | Mandatory pass/fail gatekeeper; zero margin for non-compliance. |
+| **Channel Partner / Intermediary (شريك القناة والموزع)** | Packages, installs, or resells the product into larger capital projects. | General Contractors, EPCs, System Integrators, Value-Added Resellers. | Compounding repeat leverage: one signed partner generates orders across multiple subsequent projects. |
+
+### Account Fit Scoring Model (0–5 Points)
+Award 1 point for each binary satisfied parameter:
+1. **Relevance (+1)**: Documented activity, mandate, or ongoing projects matching the offering.
+2. **Authority / Budget (+1)**: Commercial footprint or capitalization confirms purchasing ability.
+3. **Reachability (+1)**: An active, verified public business contact channel exists.
+4. **Proximity (+1)**: Geographic alignment or proven history with similar offerings/markets.
+5. **Timing (+1)**: Published tender, active build phase, or seasonal budget window within 3–6 months.
+
+- **Tier A (Score 4–5)**: Immediate high-priority focus.
+- **Tier B (Score 3)**: Secondary nurture queue.
+- **Tier C (Score ≤ 2)**: Excluded unless required to meet list size thresholds.
+
 
