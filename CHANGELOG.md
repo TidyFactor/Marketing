@@ -2,6 +2,28 @@
 
 All notable changes to the **[@tidyfactor/marketing](https://www.npmjs.com/package/@tidyfactor/marketing)** package will be documented in this file.
 
+## [1.8.0] - 2026-11-11
+
+### 🎯 Added — B2B Pipeline, Account Intelligence & Sourced Prospect Lists
+- **Command Dispatcher (`references/commands/prospects.md`)**:
+  - Registered `prospects` command routing to `references/workflows/prospect-pipeline.md`.
+  - Configured capabilities for B2B Account Intelligence, 4-Role Buying System mapping, 0–5 Fit Scoring, and dual format data export.
+- **B2B Prospect Pipeline Workflow (`references/workflows/prospect-pipeline.md`)**:
+  - Authoritative 7-step deterministic workflow generating an 18-column target-account matrix with verified primary Evidence URLs.
+  - Mandatory `## Validation checklist` enforcing zero guessed emails, corporate-only targeting, deduplication, and pre-emit quality critique stamps.
+- **Operational Memory Expansion (`references/memory/frameworks.md`)**:
+  - Added Section 6 defining the B2B Buying System Architecture: Deciders (P&L budget holders), Influencers (technical specifiers/BOQs), Gatekeepers (vendor pre-qualification), and Channel Partners (EPCs, distributors, resellers).
+  - Formulated the 5-point Account Fit Scoring Model (Relevance, Budget, Reachability, Proximity, Timing) and Priority Tiers (A, B, C).
+- **Quality & Privacy Governance (`references/memory/quality-bar.md`)**:
+  - Added Section: *B2B Data Privacy, Integrity & Zero-Padding Invariants*.
+  - Strictly banned personal/donor data harvesting, pattern-generated email guessing, and synthetic list padding.
+  - Mandated corporate sender transparency and unconditional opt-out compliant with Saudi PDPL, UAE Decree-Law 45/2021, and EU GDPR.
+- **Metadata & Ecosystem Synchronization**:
+  - Atomically bumped SemVer version to `1.8.0` across `package.json`, `.tidyfactor`, `brand.yaml`, `brand.json`, `README.md`, and `README.ar.md`.
+  - Updated `SKILL.md` dispatcher table and Non-Negotiable Quality Constraints.
+
+---
+
 ## [1.7.0] - 2026-09-10
 
 ### 🚀 Added — Generative Engine Optimization (GEO) & AI Citation Strategy

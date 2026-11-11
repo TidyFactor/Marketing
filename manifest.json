@@ -126,6 +126,42 @@
         "dependencies": []
       },
       "invoked_by_commands": ["audit"]
+    },
+    {
+      "name": "audit_prospects",
+      "description": "Validates B2B prospect CSV matrices against the canonical 18-column schema, evidence URLs, dates, and privacy constraints.",
+      "entrypoint": {
+        "runtime": "python3",
+        "script": "scripts/audit_prospects.py"
+      },
+      "invocation": {
+        "cli_pattern": "{runtime} {skill_root}/{script} {target_path} {flags}",
+        "args": [
+          {
+            "name": "target",
+            "type": "path",
+            "required": true,
+            "description": "Path to prospect CSV file to audit"
+          },
+          {
+            "name": "json",
+            "type": "boolean",
+            "required": false,
+            "default": false,
+            "flag": "--json",
+            "description": "Output structured JSON report"
+          }
+        ]
+      },
+      "output": {
+        "format": "json",
+        "channel": "stdout"
+      },
+      "runtime_requirements": {
+        "isolation_recommended": false,
+        "dependencies": []
+      },
+      "invoked_by_commands": ["prospects", "audit"]
     }
   ],
   "decision_gates": [
@@ -248,6 +284,42 @@
           ],
           "persist_to": {
             "local": { "path": ".tidyfactor/marketing-brief.snapshot.yaml" }
+          }
+        }
+      ]
+    },
+    {
+      "command": "prospects",
+      "description": "Decision gate resolving target vertical, priority geography, buying role, and volume boundaries before prospect list research.",
+      "decisions": [
+        {
+          "key": "target_geography",
+          "description": "Priority geographical market for account discovery",
+          "type": "enum",
+          "options": ["ksa", "uae", "kuwait", "qatar", "oman", "egypt", "libya", "global"],
+          "default": "ksa",
+          "priority": 1,
+          "discovery": [
+            {
+              "source": "local_file",
+              "path": "brand.yaml",
+              "json_path": "$.targetMarket",
+              "track_staleness": true
+            }
+          ],
+          "persist_to": {
+            "local": { "path": ".tidyfactor/prospects.snapshot.yaml" }
+          }
+        },
+        {
+          "key": "target_buying_role",
+          "description": "Primary role targeted in the procurement ecosystem",
+          "type": "enum",
+          "options": ["decider", "influencer", "gatekeeper", "channel_partner"],
+          "default": "channel_partner",
+          "priority": 2,
+          "persist_to": {
+            "local": { "path": ".tidyfactor/prospects.snapshot.yaml" }
           }
         }
       ]
